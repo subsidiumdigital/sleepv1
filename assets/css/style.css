@@ -1,30 +1,49 @@
-/**
-* Template Name: MyResume - v2.2.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #bebebe;
-  background-color: rgb(27, 27, 27);
+  font-family: "FreeMono", monospace;
+  color: #8ba3be;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: 200;
+  font-size: 14px;
 }
 
 a {
-  color: #0563bb;
+  color: #7fb8ee;
 }
 
 a:hover {
-  color: #067ded;
+  color: #284b6e;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica", sans-serif;
+}
+
+div.daostruct {
+  height: 3em;
+  position: relative 
+}
+div.daostruct h5 {
+  margin: 5px;
+  padding: 5px;
+  background: rgb(162,199,234);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  border: 1px;
+  border-color: rgb(104,153,188);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+
 }
 
 /*--------------------------------------------------------------
@@ -38,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #0563bb;
+  background: #284b6e;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -53,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #0678e3;
+  background: #284b6e;
   transition: background 0.2s ease-in-out;
 }
 
@@ -68,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: rgb(26, 26, 26);
+  background: rgb(255, 255, 255);
 }
 
 #preloader:before {
@@ -76,8 +95,8 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #0563bb;
-  border-top-color: #fff;
+  border: 6px solid #284b6e;
+  border-top-color: rgb(134, 171, 219);
   border-bottom-color: #fff;
   border-radius: 50%;
   width: 60px;
@@ -130,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
   #header {
     width: 300px;
-    background: rgb(27, 27, 27);
+    background: rgb(255, 255, 255);
     border-right: 1px solid #e6e9ec;
     left: -300px;
   }
@@ -160,13 +179,13 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: flex;
   align-items: center;
-  color: #bebebe;
+  color: #85a9d8;
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: rgb(27, 27, 27);
+  background: #85a9d800;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -179,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a span {
   padding: 0 5px 0 7px;
-  color: #45505b;
+  color: #85a9d8;
 }
 
 @media (min-width: 992px) {
@@ -194,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #fff;
-  background: #0563bb;
+  background: #0b3761;
 }
 
 .nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
@@ -227,7 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #45505b;
+  color: #284b6e;
 }
 
 .mobile-nav-active {
@@ -248,7 +267,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/top-bg.jpg")  no-repeat;
+  background: url("/assets/img/top-bg.png")  no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -261,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.089);
+  background: rgba(0, 0, 0, 0);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -274,15 +293,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: #284b6e;
   text-align: left;
 }
 
 #hero p {
-  color: #bebebe;
+  color: #85a9d8;
   margin: 15px 0 0 0;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Helvetica", sans-serif;
 }
 
 #hero p span {
@@ -297,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: #85a9d8;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
@@ -342,7 +361,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: #1a3957;
 }
 
 .section-title h2::before {
@@ -369,6 +388,7 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+  font-size: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -377,7 +397,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #bebebe;
+  color: #1a3957;
 }
 
 .about .content ul {
@@ -397,6 +417,7 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+  font-size: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -408,7 +429,7 @@ section {
   width: 100%;
   position: relative;
   text-align: center;
-  background: rgb(27, 27, 27);
+  background: rgba(27, 27, 27, 0);
 }
 
 .facts .count-box i {
@@ -417,7 +438,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #0563bb;
+  background: #1d2935;
   padding: 12px;
   color: #fff;
   border-radius: 50px;
@@ -427,13 +448,13 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #dededf;
+  color: #747474;
 }
 
 .facts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Monaco", monospace;
   font-size: 14px;
 }
 
@@ -452,7 +473,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Monaco", monospace;
   color: #45505b;
 }
 
@@ -469,7 +490,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #0563bb;
+  background-color: rgb(104,153,188);
 }
 
 /*--------------------------------------------------------------
@@ -480,13 +501,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: #577ca1;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid #79aad8;
   position: relative;
 }
 
@@ -495,18 +516,20 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  font-family: "Helvetica", sans-serif;
+  color: #78aada;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
-  font-size: 16px;
-  background: #112d4985;
+  font-size: 15px;
+  background: #79aad8;
+  color: #fcfcfc;
   padding: 5px 15px;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 300;
   margin-bottom: 10px;
+  border-radius: 15px;
 }
 
 .resume .resume-item ul {
@@ -530,7 +553,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #0563bb;
+  border: 2px solid #182f46;
 }
 
 /*--------------------------------------------------------------
@@ -905,16 +928,16 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: rgb(27, 27, 27);
+  background: rgba(27, 27, 27, 0);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #bebebe;
+  color: #4a697e;
   float: left;
   width: 44px;
   height: 44px;
-  background: rgb(27, 27, 27);
+  background: rgba(27, 27, 27, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -942,7 +965,7 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #0563bb;
+  background: #17293a;
   color: #fff;
 }
 
@@ -978,7 +1001,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #1897d2;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1008,8 +1031,8 @@ section {
   border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
-  color: #bebebe;
-  background-color: rgb(27, 27, 27);
+  color: #777777;
+  background-color: rgba(27, 27, 27, 0);
 }
 
 .contact .php-email-form input {
@@ -1021,7 +1044,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #0563bb;
+  background: #82abd1;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1030,7 +1053,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #0678e3;
+  background: #192a3a;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1117,7 +1140,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: rgb(27, 27, 27);
+  background: rgba(253, 253, 253, 0);
   color: #bebebe;
   font-size: 14px;
   text-align: center;
@@ -1128,7 +1151,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: "Helvetica", sans-serif;
   padding: 0;
   margin: 0 0 15px 0;
 }
@@ -1171,4 +1194,14 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+#responsive-token {
+  display: block;
+  margin-top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+
 }
