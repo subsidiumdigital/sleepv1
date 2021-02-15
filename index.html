@@ -20,6 +20,16 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/602497c618.js" crossorigin="anonymous"></script>
+
+  <!-- Moar Scripts -->
+<script> 
+  function changecmc() {
+    document.getElementById('coinmarketcap-widget-marquee').theme='dark';
+  }
+</script>
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -27,13 +37,11 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link id="theme" href="assets/css/light.css" rel="stylesheet">
+  <link href="dark-mode.css" rel="stylesheet">
 </head>
 
 <body>
-
   <!-- ======= Mobile nav toggle button ======= -->
   <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
@@ -50,8 +58,20 @@
         <li><a href=""><i class="bx bx-file"></i> <span>Whitepaper</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
+  
+    <!-- Dark Mode Toggle -->
+    <div>
+      <input type="checkbox" class="checkbox" id="chk"/>
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+    
 
-  </header><!-- End Header -->
+  
+</header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
@@ -72,11 +92,8 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
-        <div id="coinmarketcap-widget-marquee"
-          coins="1027,7055,7278,7336,5864,5728,7083,1982,2586,1518,2539,5777,1934,5692" currency="USD" theme="light"
-          transparent="true" show-symbol-logo="true"></div>
+      <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+      <coingecko-coin-price-marquee-widget  coin-ids="ethereum,armor,curve-dao-token,stake-dao,aave,maker,uniswap,sushi,havven,nxm,the-graph,enjincoin" currency="usd" background-color="#ffffff000" locale="en" font-color="#7eb1e7"></coingecko-coin-price-marquee-widget>
           <p></p>
         <div class="section-title">
           <h2>Founded with Charity in mind</h2>
@@ -358,6 +375,7 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

@@ -1,9 +1,8 @@
-/**
-* Template Name: MyResume - v2.2.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+//Document Start - JS Doc for Subsidium.Digital webfrontend
+//Pre Function Imports
+
+
+//End of PreFunc Imports
 !(function($) {
   "use strict";
 
@@ -107,6 +106,17 @@
     });
   });
 
+  // JS For DarkMode Toggle
+  const chk = document.getElementById('chk');
+
+  chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+  });
+   
+
+
+
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -187,5 +197,5 @@
     loop: true,
     items: 1
   });
-
 })(jQuery);
+
