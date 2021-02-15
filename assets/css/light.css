@@ -52,10 +52,6 @@ div.daostruct h5 {
 body.dark {
   background-color: rgb(17, 25, 41);
 }
-
-hero.dark {
-  background-image: url("/assets/img/top-bg-dark.png")  no-repeat;
-}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
