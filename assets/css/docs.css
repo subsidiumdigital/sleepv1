@@ -2,7 +2,25 @@
 
 * {
   box-sizing: border-box;
+
 }
+
+html, body {
+    background:  rgb(17, 25, 41);
+    color: rgb(253, 253, 253);
+    font: 1em monospace;
+    margin: 0;
+  }
+
+    .site {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+     }
+
+     .site-content {
+         flex: 1;
+     }
 
 h2 {
     display: block;
@@ -33,11 +51,6 @@ img {
     text-align: center;
 }
 
-html, body {
-  background:  rgb(17, 25, 41);
-  color: rgb(253, 253, 253);
-  font: 1em monospace;
-}
 
 ::selection {
   background-color: #78aada;
@@ -46,7 +59,7 @@ html, body {
 .tabbed {
   width: 700px;
   margin: 35px auto;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .tabbed > input {
@@ -105,7 +118,7 @@ html, body {
     opacity: 1;
     position: relative;
     transform: none;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   .tabs > div h2 {
     border-bottom: 2px solid #4e8cde;
@@ -152,19 +165,16 @@ nav {
   /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
-    position: relative;
-    
+.footer {
+    width: 100%;
     background: rgba(253, 253, 253, 0);
     color: #bebebe;
     font-size: 14px;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 300px;
-    clear: both;
+    margin-bottom: 10px;
   }
   
-  #footer h3 {
+  .footer h3 {
     font-size: 36px;
     font-weight: 700;
     position: relative;
@@ -173,7 +183,7 @@ nav {
     margin: 0 0 15px 0;
   }
   
-  #footer p {
+  .footer p {
     font-size: 15;
     font-style: italic;
     padding: 0;
