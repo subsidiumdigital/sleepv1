@@ -361,7 +361,7 @@ body.dark {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #284b6e;
+  color: #0563bb;
   text-align: left;
 }
 
@@ -1273,3 +1273,24 @@ section {
   height: auto;
 }
 
+/* Tool Tip Code */ 
+// Version 2
+abbr[data-title] {
+  position: relative;
+  font-family: monospace;
+  text-decoration: underline dotted; 
+}
+abbr[data-title]:hover::after,
+abbr[data-title]:focus::after {
+  content: attr(data-title);
+  position: relative;
+  margin-bottom: 10px;
+  transform: translateX(50%);
+  width: auto;
+  white-space: nowrap;
+  background: #ff006200;
+  color: rgb(51, 81, 140);
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 3px 5px;
+}
