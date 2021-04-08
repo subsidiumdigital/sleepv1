@@ -88,11 +88,12 @@ body.dark {
   position: absolute;
   top: 7px;
   left: 8px;
+  color: rgb(255, 216, 61);
 }
 
 .back-to-top:hover {
-  color: #fff;
-  background: #284b6e;
+  color: rgb(255, 216, 61);
+  background: #36618c;
   transition: background 0.2s ease-in-out;
 }
 
@@ -374,8 +375,10 @@ body.dark {
 }
 
 #hero p span {
-  color: rgb(255 216 61);
+  color: rgba(255, 216, 61);
   letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(35, 35, 35, 0.3);
+  font-weight: 400;
 }
 
 #hero .social-links {
