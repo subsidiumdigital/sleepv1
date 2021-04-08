@@ -81,7 +81,7 @@
         <a href="https://twitter.com/SubsidiumDGTL" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         <a href="https://github.com/subsidiumdigital/" class="github"><i class="bx bxl-github"></i></a>
-        <a><img src="assets/img/metamask.svg" class="enableEthereumButton" title="Powered by Terra"/></a>
+        <a href="https://terra.money"><img src="assets/img/metamask.svg" class="enableEthereumButton" title="Powered by Terra"/></a>
         <a class="tipEthereum"><abbr data-title="Click to donate 💙"><i class='bx bx-donate-heart'></i></abbr></a>
       </div>
     </div>
@@ -103,14 +103,17 @@
             <img src="assets/img/multichain-svg.svg" alt="SubsidiumDAO Ecosystem" id="responsive-token" title="SubsidiumDAO Multi-chain Ecosystem">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>The Internet of Blockchains &amp; Decentralised Charity.</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis facilisis consectetur. Mauris eu enim tincidunt, condimentum mauris nec, tincidunt metus. Aliquam nec arcu at ex egestas luctus. Etiam sapien velit, consequat nec imperdiet ac, molestie ac ligula. Phasellus condimentum maximus diam. Sed eget eros neque. Aliquam vestibulum scelerisque massa vitae convallis. Sed ultrices vulputate odio, quis volutpat quam.
+            <h3>The Internet of Blockchains &amp; Decentralised Philanthropy.</h3>
+            <p></p>
+            <div class="cardparent">
+              <div class="card1"> </div>
+              <div class="card2"> </div>
+              <div class="card3"> </div>
+              </div>
+          </div>  
+          </div>  
 
-Sed dignissim, nibh porta elementum ullamcorper, est urna vehicula sapien, vel tincidunt risus nisi eu diam. Vestibulum elit leo, blandit quis elit eget, tincidunt consequat odio. Vivamus porttitor ullamcorper rutrum. Nam tempor suscipit lacus et gravida. Aenean vestibulum augue in sapien rutrum, ut gravida purus eleifend. Integer porttitor at eros eu hendrerit. Quisque ullamcorper elit pulvinar est imperdiet, vitae malesuada est volutpat. Curabitur facilisis, metus sed ultrices volutpat, mauris mi imperdiet nunc, id tempor lectus nisi in eros. Proin malesuada enim nec dui cursus posuere. Morbi porta finibus ligula vitae tempus. Nunc gravida iaculis nibh non suscipit. Donec et eros eu ligula suscipit condimentum. Suspendisse ac leo aliquam, sodales ex in, auctor nisi. Sed posuere a dolor porttitor tincidunt. Fusce condimentum a eros id sollicitudin.
-            </p>
-          </div>
-        </div>
+          
 
     </section>
     <!-- End About Section -->
@@ -283,53 +286,7 @@ Sed dignissim, nibh porta elementum ullamcorper, est urna vehicula sapien, vel t
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Eth Donate Src -->
-  <script src="https://cdn.jsdelivr.net/npm/web3@1.3.4/dist/web3.min.js"></script>
-
-  <!-- Eth Web3 Load -->
-
-
-  <!-- Web3 Connect -->
-  <script>
-  const ethereumButton = document.querySelector('.enableEthereumButton');
-  const tipEthereum = document.querySelector('.tipEthereum')
-
-  ethereumButton.addEventListener('click', () => {
-    //Will Start the metamask extension
-    ethereum.request({ method: 'eth_requestAccounts' });
-  });
-
-//  <!-- Web3 Send -->
-
-  tipEthereum.addEventListener('click', () => {
-  ethereum
-    .request({
-      method: 'eth_sendTransaction',
-      params: [
-        {
-          from: accounts[0],
-          to: '0xADEF4805aBdEB12419621D145aB96a163dF2b39f',
-          value: '0x11C37937E08000',
-          gasPrice: '0x174876E800',
-          gas: '0x5208',
-        },
-      ],
-    })
-    .then((txHash) => console.log(txHash))
-    .catch((error) => console.error);
-});
-
-ethereumButton.addEventListener('click', () => {
-  getAccount();
-});
-
-async function getAccount() {
-  accounts = await ethereum.request({ method: 'eth_requestAccounts' });
-}
-  </script>
   
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
