@@ -224,11 +224,12 @@ section:target h1 {
     animation: 2s fadeIn forwards .5s;
 }
 
-section:target ~ .articles {
+section:target ~ .articles, .mobile {
   position: absolute;
-  visibility: hidden;
+  visibility: hidden !important;
   display: none !important;
 }
+
 
 
 #first {
@@ -356,7 +357,8 @@ margin-bottom: 75px;
 @media all and (max-width: 934px) {
   .site, nav {display: none;}
   .mobile {
-    visibility: visible;
+    visibility: visible !important;
+    display: flex !important;
   }
 }
 
@@ -1026,7 +1028,7 @@ sml {
 }
 
   .mobile {
-  display: flex;
+  display: none;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -1036,7 +1038,7 @@ sml {
   background: linear-gradient(308deg, rgba(104,37,151,1) 31%, rgba(8,71,111,1) 99%);
   width: 100vw;
   height: 100vh;
-  
+  visibility: hidden;
 }
 
 #mobileh1 {
