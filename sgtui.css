@@ -1039,6 +1039,7 @@ sml {
   width: 100vw;
   height: 100vh;
   visibility: hidden;
+  overflow: hidden;
 }
 
 #mobileh1 {
@@ -1053,5 +1054,6 @@ sml {
   max-width: 70vw;
   background: linear-gradient(90deg, #efd5ff70 0%, #515ada50 100%);
   color: #fff;
+  overflow: contain;
   
 }
