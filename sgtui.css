@@ -45,11 +45,11 @@ body::-webkit-scrollbar {
 }
 
 .frontlogo {
-  width: 6vw;
+  width: 25vw;
   position: absolute;
-  top: 47vh;
-  right: 19.5vw;
-  opacity: 0.75;
+  top: 29vh;
+  right: 0vw;
+  opacity: 0.15;
   
 }
 
@@ -59,8 +59,8 @@ body::-webkit-scrollbar {
   width: 40vw;
   height: auto;
   top: 14vh;
-  opacity: 0.5;
-  transition: 3s;
+  opacity: 0.3;
+  transition: 2s;
 }
 
 @keyframes opacityfade {
@@ -76,16 +76,15 @@ body::-webkit-scrollbar {
 .textlogo {
     position: absolute;
     top: 48.75vh;
-    right: 5vw;
+    right: 2vw;
     color: #fff;
-    font-size: 2.25vw;
-    font-weight: 200;
-    text-transform: Capitalize;
-    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-    opacity: 0.6;
+    font-size: 2.5vw;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2);
+    opacity: 0.75;
     justify-items: center;
-    font-family: Segoe UI; 
-    letter-spacing: 1px;
+    font-family: 'Gruppo', sans-serif;
+    font-weight: lighter;
 }
 
 
@@ -100,7 +99,7 @@ hr.rounded {
 
 #twitter {
   color: #fff;
-  font-size: 20px;
+  font-size: 3vh;
   position: fixed;
   top: 15px;
   padding: 2px;
@@ -110,7 +109,7 @@ hr.rounded {
 
 #github {
   color: #fff;
-  font-size: 20px;
+  font-size: 3vh;
   position: fixed;
   top: 15px;
   padding: 2px;
@@ -124,7 +123,7 @@ text-shadow: #fff 0px 0px 2px, #00a0ff 0px 0px 4px, #7f2597 0px 0px 7px, #7f2597
 
 #docs {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 2vh;
   position: fixed;
   top: 18px;
   padding: 2px;
@@ -139,7 +138,7 @@ text-shadow: #fff 0px 0px 2px, #00a0ff 0px 0px 4px, #7f2597 0px 0px 7px, #7f2597
 
 #faq {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 2vh;
   position: fixed;
   top: 18px;
   padding: 2px;
@@ -158,11 +157,13 @@ text-shadow: #fff 0px 0px 2px, #00a0ff 0px 0px 4px, #7f2597 0px 0px 7px, #7f2597
 }
 
 nav a {
-    font-size: 30px;
+    font-size: 1.75vw;
     color: #fff;
     text-decoration: none;
     padding: 15px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
 }
 
 nav {
@@ -175,6 +176,11 @@ nav {
     min-height: 100vh;
     min-width: 10%;
     background: linear-gradient(308deg, rgba(19,70,139,0.6505952722886029) 11%, rgba(48,9,121,0.6141807064622724) 30%, rgba(127,37,151,0.5777661406359419) 35%, rgba(8,71,108,0.7318277652858018) 100%);
+}
+
+i {
+  font-size: 2.75vw;
+
 }
 
 i:hover {
@@ -252,16 +258,17 @@ section:target ~ .articles, .mobile {
 }
 
 .logo {
-  width: 45px;
+  width: 3.75vw;
 }
 
   .logo:hover {
     cursor: pointer;
     transition: 2.0s;
-    transform: scale(1.75);
+    transform: scaleY(1.1);
     transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
+    
 }
 
 .parentg1 {
@@ -397,10 +404,10 @@ width: 100%;
 
 
 h4 {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #fff;
   font-weight: 50;
-  font-size: 9px;
+  font-size: .7vw;
   text-transform: uppercase;
   text-align: center;
   margin-top: -35px;
@@ -578,6 +585,7 @@ article h2 {
 
 .infocard1 h1 {
   font-size: 1.8vw;
+  font-family: 'Gruppo', sans-serif;
   color: #ffffff;
   text-transform: Capitalize;
   position: relative;
@@ -590,6 +598,7 @@ article h2 {
   
 .infocard2 h1 {
   font-size: 1.8vw;
+  font-family: 'Gruppo', sans-serif;
   font-weight: 300;
   color: #ffffff;
   text-transform: capitalize;
@@ -603,10 +612,10 @@ article h2 {
   position: relative;
   margin-top: -10px;
   top: 1vw;
-  font-size: 0.975rem;
+  font-size: 2.4vh;
   color: #ffffff87;
   padding: 15px; 
-  font-family: "Segoe UI";
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   text-overflow: ellipsis;
   max-height: 70vh;
@@ -847,11 +856,11 @@ align-items: center;
 
 .split_yield h1 {
   position: relative;
-  top: -6rem;
+  top: -14vh;
   left: -4vw;
-  font-family: "Segoe UI";
-  font-size: 1.45rem;
-  font-weight: 400;
+  font-family: "Gruppo", sans-serif;
+  font-size: 2vw;
+  font-weight: 500;
   letter-spacing: 1.25px;
   text-decoration: none;
   background: -webkit-linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
@@ -862,10 +871,10 @@ align-items: center;
 .p_assets h1 {
   position: relative;
   text-align: justify;
-  top: -6rem;
+  top: -14vh;
   left: -4vw;
-  font-family: "Segoe UI";
-  font-size: 1.45rem;
+  font-family: "Gruppo", sans-serif;
+  font-size: 2vw;
   font-weight: 400;
   letter-spacing: 1.25px;
   text-decoration: none;
@@ -976,9 +985,9 @@ background: linear-gradient(308deg, rgba(150,37,151,1) 31%, rgba(21,120,183,1) 9
   max-width: 97.50%;
   left: 1vw;
   top: -12.5vh;
-  font-size: 0.9rem;
+  font-size: 2.5vh;
   padding: 7.5px;
-  font-family: "Segoe UI";
+  font-family: "Roboto", sans-serif;
   opacity: 0.825;
   letter-spacing: 0.5px;
   line-height: 1.4;
@@ -998,8 +1007,8 @@ background: linear-gradient(308deg, rgba(150,37,151,1) 31%, rgba(21,120,183,1) 9
   position: relative;
   top: 27.75%;
   max-width: 100%;
-  font-family: "Segoe UI";
-  font-size: 0.9rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.25vh;
     background: -webkit-linear-gradient(90deg, #efd5ff 0%, #DBD6FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1012,7 +1021,7 @@ background: linear-gradient(308deg, rgba(150,37,151,1) 31%, rgba(21,120,183,1) 9
   top: 27.75%;
   max-width: 100%;
   font-family: "Segoe UI";
-  font-size: 0.9rem;
+  font-size: 2.25vh;
     background: -webkit-linear-gradient(90deg, #efd5ff 0%, #DBD6FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
