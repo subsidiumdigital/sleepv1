@@ -1,235 +1,119 @@
 
-<html lang="en">
-<head> <!-- start of head -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  
-  <!-- descriptors -->
-  <title>Subsidium Digital - Blockchain Philanthropy</title>
-  <meta content="Developing Philanthropic based Protocols on the Terra Money Ecosystem" name="description">
-  <meta content="Terra, Luna, Charity, Blockchain, Yield, Philanthropy" name="keywords">
-  
-  <!-- Stylesheet -->
-    <link href="sgtui.css" rel="stylesheet">
-  
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.ico">
-  
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/602497c618.js" crossorigin="anonymous"></script>
-  
- <!-- fonts -->
- <style>
-  @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Roboto:wght@300&display=swap');
-  </style>
-  
-</head> <!-- end of head -->
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <!-- metainfo -->
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Subsidium Network</title>
 
-<body> <!-- body.start -->
-  
-<nav> <!-- nav.start -->
-   <a href="#first"><img src="./assets/logowhite.svg" class="logo"></img></a>
-  <h4>News &amp; Updates</h4>
-  <hr class="rounded">
-   <a href="#second"><i class="fas fa-coins"></i></a>
-  <h4>Subsidium dapp</h4>
-  <hr class="rounded">
-   <a href="#third"><i class="fas fa-university"></i></a>
-  <h4>Governance</h4>
-  <hr class="rounded">
-   <a href="mailto:philanthropydigital@protonmail.com"><i class="far fa-envelope"></i></a>
-  <h4>Contact Us</h4>
-  <hr class="rounded">
-  <a class="backbutton" href="#home" onclick="toggle_visibility('article');"><i class="far fa-arrow-alt-circle-left"></i></a>
-  <h4>Home</h4>
- </nav> <!-- nav.end -->
+        <!-- import stylesheets -->
+            <link href="main.css" rel="stylesheet">
+        <!-- import fonts-->
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+            </style>
+            <script src="https://kit.fontawesome.com/602497c618.js" crossorigin="anonymous"></script>
+        </head> <!-- end of html head-->
+        <body>
+        
+            <div id='content-wrapper'>
+                <nav>
+                    <img id='nav-logo' src='\assets\logowhite.svg'>
+                    <a href='https://docs.subsidium.digital'><h4 class='nav-links' id='navdocs'><i class="fas fa-book"></i> Documents </h4></a><a href='https://docs.subsidium.digital/frequently-asked-questions-faqs'><h4 class='nav-links' id='navfaq'><i class="fas fa-question"></i> FAQ</h4></a>
+                    <div id='webapp-btn'><h4 class='nav-links' id='enter-app'>WebApp <i class="fas fa-desktop"></i></h4></div>
+                    <socials id='social1'><a href='https://github.com/subsidiumdigital/'><i class="fab fa-github"></i></a></socials><socials id='social2'><a href='https://twitter.com/SubsidiumDGTL'><i class="fab fa-twitter"></i></a></socials>
+                </nav>
 
-  <div class='site'>
-<div class='container' id='home'> <!-- container.start -->
-  
-  
-  <a href='https://nowpayments.io/donation?api_key=4RZMKA1-MNA44B0-JRXYSWR-811ENTA' class='dn8btn' title='Support Development'>💜🛠️</a>
-  
-     <div class="socialgrid"> <!-- socialgrid.start -->
-        <div class="socialdiv1"> <!-- socialdiv1.start -->
-          <a href='https://docs.subsidium.digital' id='docs'>Documents</a>
-          <a href='https://docs.subsidium.digital/frequently-asked-questions-faqs' id='faq'>FAQ</a>
-       </div> <!-- socialdiv1.end -->
-        <div class="socialdiv2"> <!-- socialdiv2.start -->
-          <a href='https://twitter.com/SubsidiumDGTL'><i class="fab fa-twitter" id='twitter'></i></a>
-          <a href='https://github.com/subsidiumdigital/'><i class="fab fa-github" id='github'></i></a>
-          </div> <!-- socialdiv2.end -->
-        <div class="socialdiv3"> <!-- socialdiv3.start -->
-          <a href='#' class='btn'>Connect Wallet 🌏</a>
-        </div> <!-- socialdiv3.end -->
-    </div> <!-- socialgrid.end -->
- 
-  <img class='frontlogo' src='./assets/logofade.svg'></img>
-    
-    <img class='isometric1' src='./assets/isometricimage.svg'></img> 
-  <h1 class='textlogo'>Subsidium Digital</h1>
-  
-  <section id= 'first'>
-    <div class="parentg1">
-     <div class="g1div1"><img src="./assets/infohublogo.svg" class="page1logo"></img> </div>
-     <div class="g1div2"> </div>
-     <div class="g1div3"> </div>
-     <div class="g1div4"> </div>
-     <div class="g1div5"> </div>
-    </div>   
-   </section>
-  
-  <section id= 'second'>
-    <h1>⚙️ Subsidium Interface Soon™</h1>
-  </section>
-  
- <section id= 'third'>
-   <h1>⚙️ Governance Interface Soon™</h1>
-  </section>
-    
-    
-      <div class="articles">
-<article id='article1'>
+            <section id='content'>
+                <div class='header-container'>
+                    <div class='header-logo'>
+                        <h1 id='headertext'>Subsidium Network</h1>
+                    </div>
+                    <div class='header-slogan'>
+                        <h2 id='headerslogan'>The Inter-Chain Philanthropy <fadetext class='anim-typewriter'>Protocol</fadetext></h2>
+                    </div>
+                    <div class='mobile-only-iso'>
+                        <img src='.\assets\isometricimage.svg' id='mobile-iso'>
+                    </div>
+            </div> <!-- end header-container -->
+            </section> <!--endsplash content-->
 
-    <img src='./assets/UST_iso.svg' class='isometric2'></img>
-  
-  <div class='infocard1'>
-    <img class='infosvg1' src='./assets/sgtcoin.png'></img>
-    <h1>
-      Philanthropy with Incentives</h1>
-    <p class='infocardpara'>
-      Decentralised Finance has opened the doors to a whole entire ecosystem of yielding 'dApps' that reward their participants for taking part. These rewards have usually been emission based distributions of their own tokens, or the protocol's utility itself. 💸/💱</p>
-  <p class='infocardpara'>
-    However, imagine a world where users could be rewarded off-chain for their on-chain contributions!🤯
-  </p>
-  <p class='infocardpara'>
-    This is the primary focus of the 'Subsidium Digital Suite🌐' - We've been developing and doing the legal groundwork to ensure that our tools are directly bonded to off-chain charity (even down to individual tax write-offs)
-  </p>
-  <p class='infocardpara'>
-    This means that our 'pAssets' that appear in the users wallet as they donate will literally show how much tax they they are entitled to write off. >> find out more <a href='#' id='infocardlink'>here</a>
-  </p>
-  </div>
-  <div class='infocard2'>
-    <img class='infosvg2' src='./assets/team.svg'></img>
-    <h1>Community Focused</h1>
-    <p class='infocardpara'>Philanthropy is made completely open-source and beneficial to all via our community focused tools: That means everyone from retail to institutions can take part! 👨‍👩‍👦‍👦</p>
-        <p class='infocardpara'>Everyone who uses 'Subsidium' protocols will have the ability to govern! Click <a href='#' id='infocardlink'>here</a> to learn more!</p>
-  </div>
-</article>
+        <div class="info-container"><!-- info-container -->
+            <div class="info-one">
+            <section id='content-2'>
+                <h1>philanthropy with incentives!</h1>
+                <p>Turn philanthropy into an experience and earn tax-incentives, exclusive artwork from your favorite charities, on-chain rewards and much more content to come! </p>
+                <img src='./assets/rewards-svg.svg' id='incentives'>
+                <img src='./assets/trio-line.svg' id='triolines'>
+            </section>
+            </div>
 
-<article id='article2'>
-  <m class="fas fa-link" id='vault-link-icon'></m>
-  <div class='infodivider'></div>
-  <div class='infodivider2'></div>
-  <div class="a2grid">
-  <div class="primus">
-    <img class='safeicon' src='./assets/primusvault.svg'></img>
-    <p id='primus-info'>The Primus Vault is designed to allow individual's to automate capital gains management on <a id='infocardlink'>Synthetic Assets</a> by delegating gains for philanthropic purposes.<br><br>
-      
-This strategy will start with integration for "Mirror" Assets i.e. <br><br>
-      <a id='infocardlink'>$mTSLA $mSLV $mCOIN</a> etc
-    </p>
-  </div>
-  <div class="passivae">
-     <img class='safeicon' src='./assets/passivaevault.svg'></img>
-  <p id='passivae-info'>A Risk Averse way to turn your investment yield into philanthropy based tax receipts.<br><br>
-    
-    More information on Vault's <a id='infocardlink'>coming soon</a>
-  </p>
-  </div>
-  <div class="token_info">
-    <img class='sgt-text' src='./assets/introducingsgt.png'></img>
-<div class='pricetracker-icons'>
-  <img class='coingecko' src='./assets/gecko-purp-svg.svg'></img>
-  <img class='coinmrkt' src='./assets/cmc-svg-white.svg'></img>
-</div>
-    <img class='tokencornericon' src='./assets/logofade.svg'></img>
-  </div>
-  <div class="p_assets">
-    <shapecir2></shapecir2>
-    <h1>Philanthropic Assets</h1>
-    <p id='p3-info'>
-      Philanthropic Bonded Assets or "pAssets" for short can be identified as any one users contribution towards the greater good. <br><br>
+            <div class="info-two">
+            <section id='content-3'>
+                <h1>convert any token into a tax receipt!</h1>
+                <p>Convert <i>any</i> digital asset into an accumulative on-chain representation of tax-deductable value! | our open-source nature means there is <i>no limit</i> to the onboarding of assets that can take place, simply <b>submit a proposal</b> to integrate/onboard!</p>
+                <img src='./assets/convert-to-tax.svg' id='token-convert'>
+                <img src='./assets/trio-line.svg' id='triolines'>
+            </section>
+            </div>
 
-      They are designed to mirror 1:1 the $UST value of any designated assets available on the Cosmos ecosystem.<br><br>
-      
-      <a id='infocardlink'>$pUST $pGBT $pEUT $pCAT</a>
-    </p>
-  </div>
-  <div class="split_yield">
-    <shapecir></shapecir>
-    <h1>Proof of Donation</h1>
-    <p id='p3-info'>"CryptoCurrency" in its current form is one of the best ways to support your favorite movement. <sml>(This is because of its current tax status of property)</sml><br><br>
- 
-The Proof-of-Donation mechanism is built onchain to automate the issuing of "tax receipts" internationally. <sml>Starting w/ UK, EU, US & CA.</sml><br><br>
-      
-      <a id='infocardlink'>How do you achieve this?</a>
-    </p>
-  </div>
-</div>
-</article>
+            <div class="info-three">
+            <section id='content-4'>
+                <h1>earn yield on your tax-receipt!</h1>
+                <p>By combining philanthropic contributions across our native ecosystems and integrated protocols into one DAO governed treasury were able to deploy <i>self-insured</i> high yield strategies. This allows our users to <b>write off more tax than contributed!</b></p>
+                <img src='./assets/tax-receipt.svg' id='tax-yield'>
+                <img src='./assets/trio-line.svg' id='triolines'>
+            </section>
+            </div>
 
-<article id='article3'>
-<div class="stats-page">
-  <div class="total_stats">
-    
-      
-    </div>
-  <div class="total_vaults"></div>
-  <div class="recent_gov"></div>
-  <div class="donation_term"></div>
-  <div class="footer"></div>
-</div>
-  <div class="stats-cover"><h1>Vault-Statistics Launching Soon:</h1>
-    <h1 id='demo'></h1>
-  </div>
-</article>
-</div> <!-- articles.end -->
-  </div> <!-- container.end -->
+            <div class="info-four">
+            <section id='content-5'>
+                <h1>inclusive, transparent & community governed!</h1>
+                <p>Our protocols are almost entirely open-source and fully transparent through on-chain explorers. The community manages these protocols through use of the worlds first <b>Twin Fair Leveraged Governance</b> system that allows users to leverage their vote share by actively utilising the protocols and punishes those who dont! the inclusive nature of this design means that even without <b><i>$SGT</i></b> users of the protocol will maintain some governance rights!</p>
+                <img src='./assets/handshake-cog.svg' id='comm-gov'>
+                <img src='./assets/trio-line.svg' id='triolines'>
+            </section>
+            </div>
 
-</div> <!-- site end -->
+            <div class="info-five">
+                <section id='content-5'>
+                    <h1 class='ui-soon'>ui example coming soon!</h1>
+                    <img src='./assets/sol-luna.svg' id='ui-chains'>
+                    <img src='./assets/trio-line.svg' id='triolines' style="opacity: 0.2;">
+                </section>
+                </div>
+
+            <div class="info-footer">
+                <div class="footer-grid">
+                    <div class="footer_community">
+                        <h1 id='footer-title'>join the community</h1>
+                        <h2 id='footer-link'><i class="fab fa-twitter-square"></i><a href='https://twitter.com/SubsidiumDGTL'> Twitter</a></h2>
+                        <h2 id='footer-link'><i class="fab fa-telegram"></i><a href='https://t.me/joinchat/4-6riF_KuHMzYzc0'> Telegram</a></h2>
+                        <h2 id='footer-link'><i class="fab fa-github"></i><a href='https://github.com/subsidiumdigital/'> Github</a></h2>
+                    </div>
+                    <div class="footer_resources">
+                        <h1 id='footer-title'>useful resources</h1>
+                        <h2 id='footer-link'><i class="fas fa-book"></i><a href='https://docs.subsidium.digital'> Documentation</a></h2>
+                        <h2 id='footer-link'><i class="far fa-question-circle"></i><a href='https://docs.subsidium.digital/frequently-asked-questions-faqs'> Frequently Asked Questions</a></h2>
+                        <h2 id='footer-link'><i class="fas fa-users"></i> Partners</h2>
+                    </div>
+                    <div class="footer_contact">
+                        <h1 id='footer-title'>contact us</h1>
+                        <h2 id='footer-link'><i class="fas fa-envelope"></i><a href='mailto:philanthropydigital@protonmail.com'>  general@...</a></h2>
+                        <h2 id='footer-link'><i class="fas fa-envelope"></i><a href='mailto:philanthropydigital@protonmail.com'> support@..</a></h2>
+                        <h2 id='footer-link'><i class="fas fa-envelope"></i><a href='mailto:philanthropydigital@protonmail.com'> invest@.</a></h2>
+                    </div>
+                  </div>
+            </div>
+   
+        </div><!--end of info-container-->        
+        </div><!--end content-wrapper -->
+
+        <!--inbodyscripts-->
+        <script type="module" src="./js/scroll.js"></script>
 
 
-<div class="mobile"><h1 id='mobileh1'>👷‍♂️🛠️👷‍♀️🔩🖥️<br>BUIDLing mobile/site...</h1></div>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Aug 01, 2021 20:35:35").getTime();
-
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-  
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-  
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
-</body> <!-- body.end -->
-
-
-</html> <!-- html.end -->
-<!-- partial -->
-  
-</body>
-</html>
+    </body> <!-- body end -->
+</html> <!-- html doc end -->
