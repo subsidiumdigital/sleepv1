@@ -559,6 +559,15 @@ fadetext {
     margin-top: -2.5%;
 }
 
+.fadeInScroll {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+/* Observer Css */
+.fadeInScroll.appear {
+    opacity: 1;
+}
 
 /* Animation */
 .anim-typewriter{
