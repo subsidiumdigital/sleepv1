@@ -26,7 +26,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff50;
 }
 
 @media only screen and (max-width: 750px) {
@@ -143,11 +143,15 @@ nav {
     font-size: 2.25vh;
     font-weight: 500;
     opacity: 1;
-    color: black;
+    color: black !important;
+    transition: 200ms;
 }
 
 #enter-app:hover {
-    color: white;
+    background: linear-gradient(308deg, rgb(238, 86, 255) 2%, rgb(5, 109, 255) 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
 }
 
 #content-wrapper {
@@ -374,16 +378,18 @@ fadetext {
 
     #social1:hover {
         transform: scale(1.1);
-        background: linear-gradient(308deg, rgba(37,131,151,1) 2%,  rgba(133,46,140,1) 99%);
+        background: linear-gradient(308deg, rgb(238, 86, 255) 2%, rgb(5, 109, 255) 99%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-weight: 500;
     }
 
     #social2:hover {
         transform: scale(1.1);
-        background: linear-gradient(308deg, rgba(37,131,151,1) 2%, rgba(104,37,151,1) 31%, rgba(133,46,140,1) 49%, rgba(8,71,111,1) 94%, rgba(8,91,111,1) 99%);
+        background: linear-gradient(308deg, rgb(238, 86, 255) 2%, rgb(5, 109, 255) 99%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-weight: 500;
     }
 
     #triolines {
