@@ -43,7 +43,7 @@ a {
     position: relative;
     top: 42.5vh;
     display: none;
-    background: linear-gradient(308deg, aqua 2%, purple 99%);
+    background: linear-gradient(308deg, rgb(238, 86, 255) 2%, rgb(5, 109, 255) 99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
