@@ -101,11 +101,11 @@ nav {
 }
 
 #navpaper {
-    right: 5.5%;
+    right: 0.5%;
     padding-right: 1vw;
     margin-right: 10px;
     transition: 200ms;
-    position: fixed;
+    position: absolute;
 }
 
 #navpaper:hover {
